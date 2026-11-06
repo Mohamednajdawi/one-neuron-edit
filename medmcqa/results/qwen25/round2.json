@@ -1,0 +1,49 @@
+{
+ "current_edit_dev_accuracy": 0.34200000762939453,
+ "dev_tests": [
+  {
+   "edit": "recalibrate only",
+   "layer": null,
+   "neuron": null,
+   "dev_accuracy": 0.3440000116825104,
+   "fixed": 15,
+   "broke": 13,
+   "p_two_sided": 0.8505540192127228
+  },
+  {
+   "edit": "L21.n114",
+   "layer": 21,
+   "neuron": 114,
+   "dev_accuracy": 0.3580000102519989,
+   "fixed": 31,
+   "broke": 15,
+   "p_two_sided": 0.02589608179323477
+  },
+  {
+   "edit": "L21.n407",
+   "layer": 21,
+   "neuron": 407,
+   "dev_accuracy": 0.34599998593330383,
+   "fixed": 19,
+   "broke": 15,
+   "p_two_sided": 0.6075913612730801
+  },
+  {
+   "edit": "L21.n717",
+   "layer": 21,
+   "neuron": 717,
+   "dev_accuracy": 0.34700000286102295,
+   "fixed": 21,
+   "broke": 16,
+   "p_two_sided": 0.5113757815852296
+  }
+ ],
+ "held_out_test": {
+  "edit": "L21.n114",
+  "accuracy": 0.335999995470047,
+  "current_edit_accuracy": 0.32600000500679016,
+  "fixed": 23,
+  "broke": 13,
+  "p_two_sided": 0.13249816396273673
+ }
+}

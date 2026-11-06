@@ -1,0 +1,94 @@
+{
+ "edit": {
+  "tensors": {
+   "model.layers.21.mlp.down_proj.weight": 1780,
+   "model.layers.23.self_attn.v_proj.bias": 125
+  },
+  "changed_entries": 1905,
+  "total_weights": 494032768,
+  "recipe": "round 1 + remove the letter-vote part of block 21 neuron 114, re-solve the counterweight"
+ },
+ "medical_prose_nll": 3.0577226170089826,
+ "eval": {
+  "accuracy": 0.335999995470047,
+  "round1_accuracy": 0.32600000500679016,
+  "baseline_accuracy": 0.2680000066757202,
+  "vs_round1": {
+   "fixed": 23,
+   "broke": 13,
+   "p_two_sided": 0.13249816396273673
+  },
+  "vs_baseline": {
+   "fixed": 159,
+   "broke": 91,
+   "p_two_sided": 2.0256290946727045e-05
+  },
+  "predicted_letters": {
+   "A": 0.26100000739097595,
+   "B": 0.23800000548362732,
+   "C": 0.21699999272823334,
+   "D": 0.2840000092983246
+  }
+ },
+ "val_rest": {
+  "accuracy": 0.3502984642982483,
+  "round1_accuracy": 0.3496701121330261,
+  "baseline_accuracy": 0.28463712334632874,
+  "vs_round1": {
+   "fixed": 59,
+   "broke": 57,
+   "p_two_sided": 0.9260777633148565
+  },
+  "vs_baseline": {
+   "fixed": 511,
+   "broke": 302,
+   "p_two_sided": 2.2192954912270336e-13
+  },
+  "predicted_letters": {
+   "A": 0.2786679267883301,
+   "B": 0.24348099529743195,
+   "C": 0.21646246314048767,
+   "D": 0.2613886296749115
+  }
+ },
+ "fresh": {
+  "accuracy": 0.3643999993801117,
+  "rotation_accuracies": [
+   0.3643999993801117,
+   0.3467999994754791,
+   0.34299999475479126,
+   0.33899998664855957
+  ],
+  "circular_accuracy": 0.3482999950647354,
+  "consistency": {
+   "same_answer_in_all_4": 0.20759999752044678,
+   "agreement": {
+    "4/4": 0.20759999752044678,
+    "3/4": 0.2720000147819519,
+    "2/4": 0.39399999380111694,
+    "1/4": 0.12639999389648438
+   },
+   "consistent_and_correct": 0.1096000000834465,
+   "consistent_and_wrong": 0.09799999743700027,
+   "correct_in_all_4": 0.1096000000834465,
+   "mean_accuracy_over_4": 0.3483000099658966,
+   "averaged_over_4_orders_accuracy": 0.3646000027656555
+  },
+  "predicted_letters": {
+   "A": 0.3124000132083893,
+   "B": 0.20800000429153442,
+   "C": 0.2160000056028366,
+   "D": 0.2635999917984009
+  },
+  "vs_round1": {
+   "fixed": 99,
+   "broke": 96,
+   "p_two_sided": 0.8861617851303955
+  },
+  "vs_baseline": {
+   "fixed": 822,
+   "broke": 481,
+   "p_two_sided": 2.713381989968628e-21
+  }
+ }
+}

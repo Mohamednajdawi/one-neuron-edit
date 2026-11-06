@@ -1,0 +1,309 @@
+{
+ "eval": {
+  "n": 1000,
+  "accuracy": 0.2680000066757202,
+  "predicted_letters": {
+   "A": 0.11699999868869781,
+   "B": 0.04600000008940697,
+   "C": 0.0729999989271164,
+   "D": 0.7639999985694885
+  },
+  "gold_letters": {
+   "A": 0.31299999356269836,
+   "B": 0.2879999876022339,
+   "C": 0.2150000035762787,
+   "D": 0.18400000035762787
+  },
+  "letter_mass": 0.8143175840377808,
+  "by_subject": {
+   "Dental": [
+    0.2362,
+    326
+   ],
+   "Surgery": [
+    0.3113,
+    106
+   ],
+   "Pediatrics": [
+    0.2174,
+    69
+   ],
+   "Pathology": [
+    0.2794,
+    68
+   ],
+   "Medicine": [
+    0.3284,
+    67
+   ],
+   "Anatomy": [
+    0.2281,
+    57
+   ],
+   "Pharmacology": [
+    0.2456,
+    57
+   ],
+   "Gynaecology & Obstetrics": [
+    0.4043,
+    47
+   ],
+   "Biochemistry": [
+    0.3243,
+    37
+   ],
+   "Physiology": [
+    0.2581,
+    31
+   ],
+   "Social & Preventive Medicine": [
+    0.3667,
+    30
+   ],
+   "Microbiology": [
+    0.1538,
+    26
+   ],
+   "Ophthalmology": [
+    0.2609,
+    23
+   ],
+   "ENT": [
+    0.0714,
+    14
+   ],
+   "Radiology": [
+    0.3846,
+    13
+   ],
+   "Forensic Medicine": [
+    0.1,
+    10
+   ],
+   "Anaesthesia": [
+    0.6,
+    5
+   ],
+   "Psychiatry": [
+    0.4,
+    5
+   ],
+   "Skin": [
+    0.2,
+    5
+   ],
+   "Orthopaedics": [
+    0.5,
+    4
+   ]
+  },
+  "circular_accuracy": 0.3139999955892563,
+  "always_A_accuracy": 0.31299999356269836
+ },
+ "val_rest": {
+  "n": 3183,
+  "accuracy": 0.28463712334632874,
+  "predicted_letters": {
+   "A": 0.13132265210151672,
+   "B": 0.04743952304124832,
+   "C": 0.07351554930210114,
+   "D": 0.7477222681045532
+  },
+  "gold_letters": {
+   "A": 0.32516494393348694,
+   "B": 0.25039270520210266,
+   "C": 0.2230600118637085,
+   "D": 0.2013823390007019
+  },
+  "letter_mass": 0.8140485286712646,
+  "by_subject": {
+   "Dental": [
+    0.2964,
+    992
+   ],
+   "Pathology": [
+    0.2974,
+    269
+   ],
+   "Surgery": [
+    0.2662,
+    263
+   ],
+   "Medicine": [
+    0.2851,
+    228
+   ],
+   "Pharmacology": [
+    0.2258,
+    186
+   ],
+   "Anatomy": [
+    0.2938,
+    177
+   ],
+   "Gynaecology & Obstetrics": [
+    0.2768,
+    177
+   ],
+   "Pediatrics": [
+    0.2727,
+    165
+   ],
+   "Physiology": [
+    0.2786,
+    140
+   ],
+   "Biochemistry": [
+    0.3209,
+    134
+   ],
+   "Social & Preventive Medicine": [
+    0.2424,
+    99
+   ],
+   "Microbiology": [
+    0.2604,
+    96
+   ],
+   "Forensic Medicine": [
+    0.2105,
+    57
+   ],
+   "Radiology": [
+    0.2679,
+    56
+   ],
+   "ENT": [
+    0.2821,
+    39
+   ],
+   "Ophthalmology": [
+    0.4571,
+    35
+   ],
+   "Anaesthesia": [
+    0.4138,
+    29
+   ],
+   "Orthopaedics": [
+    0.125,
+    16
+   ],
+   "Skin": [
+    0.5,
+    12
+   ],
+   "Psychiatry": [
+    0.3636,
+    11
+   ],
+   "Unknown": [
+    0.0,
+    2
+   ]
+  }
+ },
+ "practice": {
+  "n": 4000,
+  "accuracy": 0.31025001406669617,
+  "predicted_letters": {
+   "A": 0.1352500021457672,
+   "B": 0.03824999928474426,
+   "C": 0.07774999737739563,
+   "D": 0.7487499713897705
+  },
+  "gold_letters": {
+   "A": 0.2887499928474426,
+   "B": 0.25725001096725464,
+   "C": 0.22824999690055847,
+   "D": 0.22574999928474426
+  },
+  "letter_mass": 0.8391449451446533,
+  "by_subject": {
+   "Medicine": [
+    0.3087,
+    392
+   ],
+   "Surgery": [
+    0.3092,
+    359
+   ],
+   "Anatomy": [
+    0.2633,
+    357
+   ],
+   "Pathology": [
+    0.3022,
+    321
+   ],
+   "Pharmacology": [
+    0.3194,
+    288
+   ],
+   "Social & Preventive Medicine": [
+    0.2787,
+    244
+   ],
+   "Gynaecology & Obstetrics": [
+    0.3562,
+    233
+   ],
+   "Microbiology": [
+    0.3421,
+    228
+   ],
+   "Physiology": [
+    0.3048,
+    210
+   ],
+   "Biochemistry": [
+    0.3333,
+    198
+   ],
+   "Dental": [
+    0.2697,
+    178
+   ],
+   "Pediatrics": [
+    0.3099,
+    171
+   ],
+   "Ophthalmology": [
+    0.2945,
+    146
+   ],
+   "Forensic Medicine": [
+    0.2836,
+    134
+   ],
+   "ENT": [
+    0.2759,
+    116
+   ],
+   "Radiology": [
+    0.3366,
+    101
+   ],
+   "Psychiatry": [
+    0.5269,
+    93
+   ],
+   "Orthopaedics": [
+    0.2571,
+    70
+   ],
+   "Unknown": [
+    0.2576,
+    66
+   ],
+   "Anaesthesia": [
+    0.2759,
+    58
+   ],
+   "Skin": [
+    0.5135,
+    37
+   ]
+  }
+ }
+}

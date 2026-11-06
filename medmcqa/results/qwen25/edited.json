@@ -1,0 +1,240 @@
+{
+ "edit": {
+  "tensors": {
+   "model.layers.21.mlp.down_proj.weight": 888,
+   "model.layers.23.self_attn.v_proj.bias": 127
+  },
+  "changed_entries": 1015,
+  "total_weights": 494032768,
+  "fraction": 2.0545195900851663e-06,
+  "notes": {
+   "recipe": "remove letter-logit component of block 21 neuron 2921's output; re-solve block 23 v_proj bias to cancel the content-free letter preference (3 rounds, no labels)",
+   "dev_accuracy": {
+    "none": 0.29,
+    "surgery": 0.311,
+    "counterweight": 0.342,
+    "both": 0.342
+   }
+  }
+ },
+ "side_effects": {
+  "medical_prose_nll_before": 3.045415379951366,
+  "medical_prose_nll_after": 3.050312492867022
+ },
+ "eval": {
+  "n": 1000,
+  "accuracy": 0.32600000500679016,
+  "predicted_letters": {
+   "A": 0.2849999964237213,
+   "B": 0.20200000703334808,
+   "C": 0.2150000035762787,
+   "D": 0.2980000078678131
+  },
+  "gold_letters": {
+   "A": 0.31299999356269836,
+   "B": 0.2879999876022339,
+   "C": 0.2150000035762787,
+   "D": 0.18400000035762787
+  },
+  "letter_mass": 0.7834455370903015,
+  "by_subject": {
+   "Dental": [
+    0.2975,
+    326
+   ],
+   "Surgery": [
+    0.3962,
+    106
+   ],
+   "Pediatrics": [
+    0.3043,
+    69
+   ],
+   "Pathology": [
+    0.3529,
+    68
+   ],
+   "Medicine": [
+    0.3433,
+    67
+   ],
+   "Anatomy": [
+    0.3333,
+    57
+   ],
+   "Pharmacology": [
+    0.2807,
+    57
+   ],
+   "Gynaecology & Obstetrics": [
+    0.2979,
+    47
+   ],
+   "Biochemistry": [
+    0.3514,
+    37
+   ],
+   "Physiology": [
+    0.5484,
+    31
+   ],
+   "Social & Preventive Medicine": [
+    0.3333,
+    30
+   ],
+   "Microbiology": [
+    0.2308,
+    26
+   ],
+   "Ophthalmology": [
+    0.2609,
+    23
+   ],
+   "ENT": [
+    0.2143,
+    14
+   ],
+   "Radiology": [
+    0.3846,
+    13
+   ],
+   "Forensic Medicine": [
+    0.1,
+    10
+   ],
+   "Anaesthesia": [
+    0.6,
+    5
+   ],
+   "Psychiatry": [
+    0.4,
+    5
+   ],
+   "Skin": [
+    0.4,
+    5
+   ],
+   "Orthopaedics": [
+    0.5,
+    4
+   ]
+  },
+  "vs_baseline": {
+   "fixed": 144,
+   "broke": 86,
+   "p_two_sided": 0.000158887140328474
+  },
+  "baseline_accuracy": 0.2680000066757202,
+  "circular_accuracy": 0.3292500004172325,
+  "baseline_circular_accuracy": 0.3139999955892563
+ },
+ "val_rest": {
+  "n": 3183,
+  "accuracy": 0.3496701121330261,
+  "predicted_letters": {
+   "A": 0.3163681924343109,
+   "B": 0.20326735079288483,
+   "C": 0.2111215889453888,
+   "D": 0.2692428529262543
+  },
+  "gold_letters": {
+   "A": 0.32516494393348694,
+   "B": 0.25039270520210266,
+   "C": 0.2230600118637085,
+   "D": 0.2013823390007019
+  },
+  "letter_mass": 0.7865579128265381,
+  "by_subject": {
+   "Dental": [
+    0.3679,
+    992
+   ],
+   "Pathology": [
+    0.3383,
+    269
+   ],
+   "Surgery": [
+    0.327,
+    263
+   ],
+   "Medicine": [
+    0.3509,
+    228
+   ],
+   "Pharmacology": [
+    0.371,
+    186
+   ],
+   "Anatomy": [
+    0.322,
+    177
+   ],
+   "Gynaecology & Obstetrics": [
+    0.209,
+    177
+   ],
+   "Pediatrics": [
+    0.3697,
+    165
+   ],
+   "Physiology": [
+    0.3714,
+    140
+   ],
+   "Biochemistry": [
+    0.3731,
+    134
+   ],
+   "Social & Preventive Medicine": [
+    0.3434,
+    99
+   ],
+   "Microbiology": [
+    0.3333,
+    96
+   ],
+   "Forensic Medicine": [
+    0.2807,
+    57
+   ],
+   "Radiology": [
+    0.5179,
+    56
+   ],
+   "ENT": [
+    0.3846,
+    39
+   ],
+   "Ophthalmology": [
+    0.4857,
+    35
+   ],
+   "Anaesthesia": [
+    0.3448,
+    29
+   ],
+   "Orthopaedics": [
+    0.1875,
+    16
+   ],
+   "Skin": [
+    0.3333,
+    12
+   ],
+   "Psychiatry": [
+    0.4545,
+    11
+   ],
+   "Unknown": [
+    0.0,
+    2
+   ]
+  },
+  "vs_baseline": {
+   "fixed": 497,
+   "broke": 290,
+   "p_two_sided": 1.5210054606772897e-13
+  },
+  "baseline_accuracy": 0.28463712334632874
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "variant": "surgery",
+ "accuracy": 0.3109999895095825,
+ "rotation_balanced": 0.33399999141693115,
+ "per_rotation": [
+  0.3109999895095825,
+  0.35600000619888306,
+  0.3529999852180481,
+  0.3160000145435333
+ ],
+ "same_option_4of4": 0.15000000596046448,
+ "different_every_time": 0.2639999985694885,
+ "content_free_prior": [
+  0.23594826459884644,
+  0.12168393284082413,
+  0.2475801706314087,
+  0.39478766918182373
+ ],
+ "bias_change_norm": 0.0,
+ "bias_entries_changed": 0,
+ "letter_offset": [
+  0.0,
+  0.0,
+  0.0,
+  0.0
+ ],
+ "letter_offset_norm": 0.0,
+ "medical_text_loss": 3.0456460799737135
+}

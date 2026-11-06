@@ -1,0 +1,15 @@
+\begin{table}[t]
+\centering\small
+\caption{\textbf{What each part of Edit 1 does.} Ablation on the tryout set (1{,}000 practice questions, four orders each), run by the agent for this paper. ``Prior D'' is the content-free probability of ``D''; $\|\Delta\vect b\|$ is the norm of the value-bias change; ``Offset'' is the norm of the constant centered letter-logit offset it injects; ``Loss'' is the change in medical-text loss.}
+\label{tab:ablation}
+\begin{tabular}{lcccccccc}
+\toprule
+Variant & Acc. & Balanced & Same 4/4 & Diff.\ 4/4 & Prior D & $\|\Delta\vect b\|$ & Offset & Loss \\
+\midrule
+Original & 29.0 & 31.2 & 8.9 & 54.2 & 59.3 & 0 & 0 & -- \\
+Surgery only & 31.1 & 33.4 & 15.0 & 26.4 & 39.5 & 0 & 0 & +0.01\% \\
+Counterweight only & 34.2 & 34.5 & 20.1 & 17.7 & 27.6 & 4.09 & 2.56 & +0.61\% \\
+Both (Edit 1) & 34.2 & 34.2 & 19.4 & 16.5 & 25.4 & 2.36 & 1.40 & +0.16\% \\
+\bottomrule
+\end{tabular}
+\end{table}
