@@ -1,6 +1,6 @@
 # One Neuron, One Bias Vector, No Training
 
-Code, data and paper for **"One Neuron, One Bias Vector, No Training: A Frontier LLM Edits 0.0002% of a Language Model's Weights and Recovers Hidden Accuracy on Medical Exam Questions"** by Mohammad Alnajdawi. Read the paper: [paper/main.pdf](paper/main.pdf).
+Code and data for **"One Neuron, One Bias Vector, No Training: A Frontier LLM Edits 0.0002% of a Language Model's Weights and Recovers Hidden Accuracy on Medical Exam Questions"** by Mohammad Alnajdawi (paper coming soon).
 
 Claude Opus 5.5 (Anthropic), working as a coding agent, was asked to improve Qwen2.5-0.5B-Instruct on the MedMCQA medical exam benchmark by editing its weights directly, with no training. It found that the model answers "D" 75% of the time, traced most of this habit to a single neuron (block 21, neuron 2921), and removed it by changing 1,015 of the model's 494 million weights (0.0002%).
 
@@ -43,7 +43,6 @@ medmcqa/            all code
   try_edits.py      the edit tools (surgery, counterweight) and a tester for candidate edits
   recipe.py         Edit 1
   results/qwen25/   saved per-question predictions behind every number in the paper
-paper/              LaTeX source, figures, tables and the compiled PDF
 ```
 
 ## Reproduce the paper
@@ -61,13 +60,12 @@ Run from the repository root. Each step overwrites the saved results in `medmcqa
 | 7 | `python medmcqa/lens3.py` | Block-by-block readout of all three models | about 3 min |
 | 8 | `python medmcqa/lens_rot.py` and `python medmcqa/probes.py` | Later checks: order-averaged lens and linear probes | about 3 min each |
 | 9 | `python medmcqa/ablation.py original` (then `surgery`, `counterweight`, `both`) | What each part of Edit 1 does | about 5 min each |
-| 10 | `python paper/make_figures.py`, then `cd paper && tectonic main.tex` | Figures, tables and the PDF | seconds |
 
-\*On an Apple M-series laptop. Results are deterministic there (batch size 1, bfloat16); on CUDA or CPU a few near-tie answers can flip. `paper/make_figures.py` caches one per-question measurement in `paper/data/n2921.json`; delete that file to recompute it with the model.
+\*On an Apple M-series laptop. Results are deterministic there (batch size 1, bfloat16); on CUDA or CPU a few near-tie answers can flip.
 
 ## How this work was done
 
-The diagnosis, the code and both edits were produced by Claude Opus 5.5 (Anthropic) at maximum reasoning effort, working as a coding agent (GitHub Copilot agent mode in VS Code) on a laptop. The author chose the model and the benchmark, set the goal and a budget of at most 4% of the weights, and asked the follow-up questions. The full instructions and the timeline are in the paper's appendix. The work was inspired by [Sparks of Weight-Space Programming](https://rikiyat.github.io/blog/weight-space-programming/) (Takehi, Teoh, Zhang and Khattab, MIT CSAIL, 2026).
+The diagnosis, the code and both edits were produced by Claude Opus 5.5 (Anthropic) at maximum reasoning effort, working as a coding agent (GitHub Copilot agent mode in VS Code) on a laptop. The author chose the model and the benchmark, set the goal and a budget of at most 4% of the weights, and asked the follow-up questions. The work was inspired by [Sparks of Weight-Space Programming](https://rikiyat.github.io/blog/weight-space-programming/) (Takehi, Teoh, Zhang and Khattab, MIT CSAIL, 2026).
 
 ## Citation
 
